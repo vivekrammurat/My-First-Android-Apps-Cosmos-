@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is My Web page</title>
+    <script>
+     document.addEventListener('DOMContentLoaded',function(){//when the dom is loading it executes
+       document.querySelector('button').onclick = count;
+     });
+
+     let counter = 0;
+     function count(){
+       counter++;
+       document.querySelector('#counter').innerHTML = counter;
+       if(counter % 10 === 0){
+         alert(`Counter is at ${counter}!`);
+       }
+     }
+    </script>
+  </head>
+ <body>
+      <h1 id="counter">Welcome..!</h1>
+      <button>Click here...!</button>
+</body>
+</html>

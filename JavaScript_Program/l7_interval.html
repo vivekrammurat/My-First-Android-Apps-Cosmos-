@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is My Web page</title>
+    <style>
+    h1{
+      text-align: center;
+      font-size: 150px;
+      background-color: #ff8811;
+    }
+    </style>
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      setInterval(count, 1000);
+    });
+
+    let counter = 0;
+    function count(){
+      counter++;
+      document.querySelector('#counter').innerHTML = counter;
+    }
+    </script>
+  </head>
+ <body>
+      <h1 id="counter">0</h1>
+
+</body>
+</html>
